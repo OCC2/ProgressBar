@@ -69,6 +69,14 @@ class ProgressBar extends \Nette\Application\UI\Control{
         if($this->currentValue==null){
             $this->currentValue = call_user_func($this->updater);
         }
+        if(isset($this->config["warningThreshold"]) && $this->config["warningThreshold"]!=null){
+            $this->config["colorStyle"] = $this->currentValue >= $this->config["warningThreshold"] ? "warning" : $this->config["colorStyle"];
+        }
+        
+        if(isset($this->config["dangerThreshold"]) && $this->config["dangerThreshold"]!=null){
+            $this->config["colorStyle"] = $this->currentValue >= $this->config["dangerThreshold"] ? "danger" : $this->config["colorStyle"];
+        }
+        
         $this->template->name = $this->name;
         $this->template->refreshTime = $this->refreshTime;
         $this->template->currentValue = $this->currentValue;
