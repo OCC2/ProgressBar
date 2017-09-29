@@ -1,5 +1,5 @@
 {
-    "name": "OCC2/ProgressBar",
+    "name": "occ2/progress-bar",
     "description": "Simple progress bar control for Nette Framework. Based on Twitter Bootstrap 3",
     "homepage": "https://github.com/OCC2/ProgressBar",
     "license": "MIT",
