@@ -8,7 +8,7 @@ Twitter Bootstrap >=3 (not for version 4)
 nette.ajax.js
 
 ###Installation:
-composer require OCC2/ProgressBar
+composer require occ2/progress-bar
 
 - copy assets/autorefresh.ajax.js to your_www_js_dir/ext and link it in your page.
 - don't forget to have Twitter bootstrap css and js files linked to your page
